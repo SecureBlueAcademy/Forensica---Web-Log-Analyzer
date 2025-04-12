@@ -18,30 +18,29 @@
 
 # Usage
 Basic Command
-**Forensica Web Log Analyzer.exe -t LOG_TYPE -i INPUT_PATH -o OUTPUT_FILE_NAME --csv/--html  
-**
 
-# Parameters
-Parameter	Description	Required
--t, --type	Log type (iis, nginx, apache)	
+**Forensica Web Log Analyzer.exe -t LOG_TYPE -i INPUT_PATH -o OUTPUT_FILE_NAME --csv/--html**
+Parameters Required:
+-t, --type	Log type (iis, nginx, apache)
 -i, --input	Path to input log file or directory
 -o, --output	Output file name (without extension)
---csv	Output in CSV format	
+--csv	Output in CSV format
 --html	Output in HTML format
--v, --verbose	Show verbose output	
+-v, --verbose	Show verbose output
 -h, --help	Show help message	
 
 # Examples
 Analyze IIS logs and generate HTML report:
-**Forensica Web Log Analyzer.exe -t iis -i C:\logs\iis\ -o report --html  **
+
+**Forensica Web Log Analyzer.exe -t iis -i C:\logs\iis\ -o report --html**
 
 Analyze Apache logs and generate CSV report:
-**Forensica Web Log Analyzer.exe -t apache -i /var/log/apache2/access.log -o apache_report --csv  
-**
+
+**Forensica Web Log Analyzer.exe -t apache -i /var/log/apache2/access.log -o apache_report --csv**
 
 Analyze Nginx logs with verbose output:
-**Forensica Web Log Analyzer.exe -t nginx -i nginx_access.log -o nginx_results --html -v  
-**
+
+**Forensica Web Log Analyzer.exe -t nginx -i nginx_access.log -o nginx_results --html -v**
 
 # Tool's Output
 For parsing and analyzing the web logs, use a cmd or powershell with valid commands.
